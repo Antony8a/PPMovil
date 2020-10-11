@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202732">
+
+    <TextView
+        android:id="@+id/t_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Nombre"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_definitiva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:text="Definitiva:"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/t_definitivaNotaFinal"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/t_nombre" />
+
+    <TextView
+        android:id="@+id/t_definitivaNotaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="115dp"
+        android:text="0.0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/btnEditarEnAsignatura"
+        app:layout_constraintStart_toEndOf="@+id/t_definitiva"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnEditarEnAsignatura"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnEliminarEnAsignatura"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/modificar" />
+
+    <ImageView
+        android:id="@+id/btnEliminarEnAsignatura"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eliminar" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/agenda_notebook_icon_124098" />
+</android.support.constraint.ConstraintLayout>
